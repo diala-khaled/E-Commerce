@@ -8,11 +8,15 @@ import ViteFonts from 'unplugin-fonts/vite'
 import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
 
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     Vue({
-      template: { transformAssetUrls }
+      // template: { transformAssetUrls }
+    
+        base: '/E-Commerce/', // استبدل repository-name باسم مستودعك
+     
     }),
     // https://github.com/vuetifyjs/vuetify-loader/tree/master/packages/vite-plugin#readme
     Vuetify(),
